@@ -1,9 +1,83 @@
-body {
-  font-family: Arial;
-  text-align: center;
-  background: #f4f4f4;
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-h1 {
+/* Body styling */
+body {
+  background-color: #f5f7fa;
   color: #333;
+  line-height: 1.6;
+}
+
+/* Hero section styling */
+.hero {
+  background: linear-gradient(135deg, #0033a0, #0059ff);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero span {
+  color: #ffd700;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: white;
+  color: #0033a0;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Common section styling */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* Light background sections */
+.gray {
+  background: #eef2f7;
+}
+
+/* Headings */
+h2 {
+  color: #0033a0;
+  margin-bottom: 15px;
+}
+
+/* Skills styling */
+.skills span {
+  display: inline-block;
+  background: #dbeafe;
+  margin: 6px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Project cards */
+.project {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }

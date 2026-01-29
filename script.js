@@ -1,11 +1,14 @@
-// This function runs when the page loads
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Portfolio website loaded successfully!");
+// Script for portfolio website
+// Role: Software Engineering
 
-  // Simple interaction example
-  const heading = document.querySelector("h1");
-
-  heading.addEventListener("click", () => {
-    alert("Thanks for visiting my portfolio!");
+// Smooth scrolling for internal links
+document.querySelectorAll("a[href^='#']").forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// Console message (to show JS is working)
+console.log("Portfolio loaded successfully");
